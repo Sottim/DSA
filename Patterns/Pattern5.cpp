@@ -1,3 +1,8 @@
+// D
+// CD
+// BCD
+// ABCD
+
 #include <iostream>
 using namespace std;
 
