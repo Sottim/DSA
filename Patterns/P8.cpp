@@ -14,14 +14,13 @@ int main(){
     cin >> n;
 
     int row = 5;
-    //Outermost loop
+    //Outermost loop to control the row elements
     while(row >= 1){
         int j = 1;
         //1st triangle
         while(j<=row){
             cout<<j;
             j = j + 1;
-
         }
         //Stars
         int t = 5;
@@ -36,14 +35,13 @@ int main(){
             cout<<"*";
             star2 = star2 - 1;
         }
-        
+
         //Reverse triangle
         int R = 1;
         int k = row;
         while(R <= k){
             cout << k;
-            k = k - 1;
-            
+            k = k - 1; 
         }
 
         cout<<endl;
