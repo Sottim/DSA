@@ -21,7 +21,7 @@ int main(){
         while(space){
             cout<<" ";
             space = space-1;
-        }
+         } 
         //2nd triangle
         int j = 1;
         while(j<=row){
