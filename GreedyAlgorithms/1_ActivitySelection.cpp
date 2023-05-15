@@ -25,9 +25,18 @@ void print_Activity(Activity array[], int size){
     }
 }
 
-int main(){
-    Activity arr[] = { { 5, 9 }, { 1, 2 }, { 3, 4 },{ 0, 6 }, { 5, 7 }, { 8, 9 } };
-    int size = sizeof(arr) / sizeof(arr[0]);
-    print_Activity(arr, size);
+int main() {
+    int size;
+    cout << "Enter the number of activities: ";
+    cin >> size;
 
+    Activity* arr = new Activity[size];
+    cout << "Enter the start and finish times for each activity:" << endl;
+    for (int i = 0; i < size; i++) {
+        cout << "Activity " << i + 1 << ": ";
+        cin >> arr[i].start >> arr[i].finish;
+    }
+    print_Activity(arr, size);
+    
+    return 0;
 }
